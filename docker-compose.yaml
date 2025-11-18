@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  studreg:
+    build: .
+    image: studregimage:latest
+    container_name: studreg_container
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      - NODE_ENV=production
